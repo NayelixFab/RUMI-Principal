@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rommies",
+  "info": {
+    "singularName": "rommie",
+    "pluralName": "rommies",
+    "displayName": "Rommie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "direction": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "seller": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::se.se"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

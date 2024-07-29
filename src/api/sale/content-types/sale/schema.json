@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "singularName": "sale",
+    "pluralName": "sales",
+    "displayName": "Sale"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "direction": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "rent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rent.rent"
+    },
+    "rommie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rommie.rommie"
+    },
+    "seller": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::se.se"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

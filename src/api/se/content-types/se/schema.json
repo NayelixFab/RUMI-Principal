@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ses",
+  "info": {
+    "singularName": "se",
+    "pluralName": "ses",
+    "displayName": "Seller"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "profileImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
